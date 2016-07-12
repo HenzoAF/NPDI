@@ -76,4 +76,10 @@
         <a class="btn bg-blue right col2 slide-button" onclick="nextSlide()">Próximo</a>
     </div>
   </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+      $('.slider').slider('pause');
+    });
+  </script>
   <?php include 'footer.inc';?>
