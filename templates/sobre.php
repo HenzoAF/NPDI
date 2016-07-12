@@ -1,28 +1,28 @@
   <?php include 'head.inc';?>
   <div class="canvas clearfix">
     <div class="col3 right">
-      <div class="col6 left card" style="background-image: url(img/quemsomos.png);">
+      <div class="col6 left card" style="background-image: url(../img/quemsomos.png);">
         <a href="#">
           <div class="card-cover-blue">
             <center><h3 class="card-text">Quem somos</h3></center>
           </div>
         </a>
       </div>
-      <div class="col6 left card" style="background-image: url(img/fotos.jpg);">
+      <div class="col6 left card" style="background-image: url(../img/fotos.jpg);">
         <a href="#">
           <div class="card-cover-blue">
             <center><h3 class="card-text">Fotos</h3></center>
           </div>
         </a>
       </div>
-      <div class="col6 left card" style="background-image: url(img/equipamentos.00_jpg_srz);">
+      <div class="col6 left card" style="background-image: url(../img/equipamentos.00_jpg_srz);">
         <a href="#">
           <div class="card-cover-blue">
             <center><h3 class="card-text">Equipamentos</h3></center>
           </div>
         </a>
       </div>
-      <div class="col6 left card" style="background-image: url(img/livros.jpg);">
+      <div class="col6 left card" style="background-image: url(../img/livros.jpg);">
         <a href="#">
           <div class="card-cover-blue">
             <center><h3 class="card-text">Livros</h3></center>

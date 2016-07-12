@@ -1,7 +1,7 @@
   <?php include 'head.inc';?>
   <div class="canvas clearfix">
     <div class="col3 right clearfix">
-      <div class="col6 left card" style="background-image: url(img/postagens.jpg);">
+      <div class="col6 left card" style="background-image: url(../img/postagens.jpg);">
         <a href="postagens.html">
           <div class="card-cover-blue">
             <center>
@@ -10,7 +10,7 @@
           </div>
         </a>
       </div>
-      <div class="col6 card left" style="background-image: url(img/destaques.jpg);">
+      <div class="col6 card left" style="background-image: url(../img/destaques.jpg);">
         <a href="#">
           <div class="card-cover-blue">
             <center>
@@ -19,7 +19,7 @@
           </div>
         </a>
       </div>
-      <div class="col6 card left" style="background-image: url(img/news.jpg);">
+      <div class="col6 card left" style="background-image: url(../img/news.jpg);">
         <a href="#">
           <div class="card-cover-blue">
             <center>
