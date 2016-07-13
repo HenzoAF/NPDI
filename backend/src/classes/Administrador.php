@@ -26,7 +26,8 @@
       return $this->id;
   }
   public function setId(){
-    $this->id = $this->getIdToUser;
+    $this->id = $this->getIdToUser();
+    $this->incrementId();
   }
   public function getLogin(){
       return $this->login;
@@ -66,7 +67,9 @@
 }
 //Incrementa e retorna o id correto
   public function getIdToUser(){
-    self::$idToUser++;
     return self::$idToUser;
+  }
+  public function incrementId(){
+    return self::$idToUser++;
   }
 ?>

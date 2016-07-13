@@ -1,7 +1,8 @@
 <?php
 /*
 *     A persistência dos dados é primeiramente implementada
-*     em arquivos. Após a conclusão das classes e rotas
+*     em arquivos. Após a conclusão das classes e rotas, será
+*     feita a optimização com implementação do banco de dados.
 */
 class AdministradorDAO implements DefaultDAO{
 
