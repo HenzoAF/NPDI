@@ -13,6 +13,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
   <script src="../js/app.js" type="text/javascript"></script>
+  <?php include 'Administrador.php';
+        include 'AdministradorDAO.php';
+  ?>
 </head>
 <body class="bg-pix" >
   <!--Navbar desktop-->
@@ -20,27 +23,27 @@
   <nav>
     <div class="nav-wrapper bg-blue">
       <ul class="left hide-on-med-and-down">
-        <li><a href="/templates/sobre.php">Sobre o NPDI</a></li>
-        <li><a href="/templates/projetos.php">Projetos</a></li>
-        <li><a href="/templates/disciplinas.php">Disciplinas</a></li>
-        <li><a href="/templates/galeria.php">Galeria</a></li>
-        <li><a href="/templates/links.php">Links</a></li>
+        <li><a href="/frontend/templates/sobre.php">Sobre o NPDI</a></li>
+        <li><a href="/frontend/templates/projetos.php">Projetos</a></li>
+        <li><a href="/frontend/templates/disciplinas.php">Disciplinas</a></li>
+        <li><a href="/frontend/templates/galeria.php">Galeria</a></li>
+        <li><a href="/frontend/templates/links.php">Links</a></li>
       </ul>
       <ul class="right hide-on-med-and-down" ng-app="clock" ng-controller="clockController as cc">
         <li>{{currentTime}}</li>
-        <li><a href="login.php">Login</a></li>
+        <li><a href="/frontend/templates/login.php">Login</a></li>
       </ul>
     </div>
   </nav>
 </div>
 <!--Nav Mobile-->
 <div class="nav-mobile">
-  <a href="/templates/sobre.php"><center><h4 class="fill bg-blue white-font mobile-menu">Sobre o NPDI</h4></center></a>
-  <a href="/templates/projetos.php"><center><h4 class="fill bg-blue white-font mobile-menu">Projetos</h4></center></a>
-  <a href="/templates/disciplinas.php"><center><h4 class="fill bg-blue white-font mobile-menu">Disciplinas</h4></center></a>
-  <a href="/templates/galeria.php"><center><h4 class="fill bg-blue white-font mobile-menu">Galeria</h4></center></a>
-  <a href="/templates/links.php"><center><h4 class="fill bg-blue white-font mobile-menu">Links</h4></center></a>
-  <a href="/templates/login.php"><center><h4 class="fill bg-blue white-font mobile-menu">Login</h4></center></a>
+  <a href="/frontend/templates/sobre.php"><center><h4 class="fill bg-blue white-font mobile-menu">Sobre o NPDI</h4></center></a>
+  <a href="/frontend/templates/projetos.php"><center><h4 class="fill bg-blue white-font mobile-menu">Projetos</h4></center></a>
+  <a href="/frontend/templates/disciplinas.php"><center><h4 class="fill bg-blue white-font mobile-menu">Disciplinas</h4></center></a>
+  <a href="/frontend/templates/galeria.php"><center><h4 class="fill bg-blue white-font mobile-menu">Galeria</h4></center></a>
+  <a href="/frontend/templates/links.php"><center><h4 class="fill bg-blue white-font mobile-menu">Links</h4></center></a>
+  <a href="/frontend/templates/login.php"><center><h4 class="fill bg-blue white-font mobile-menu">Login</h4></center></a>
 </div>
 <!--Fim da navbar-->
 <div class="outdor clearfix">

@@ -9,6 +9,7 @@
     private $primeiroNome;
     private $sobreNome;
     private $email;
+    private static $idToUser = 0;
 
 //Construtor para a classe
     function __construct(array $data){
@@ -24,8 +25,8 @@
   public function getId(){
       return $this->id;
   }
-  public function setId($idSet){
-    $this->id = $idSet;
+  public function setId(){
+    $this->id = $this->getIdToUser;
   }
   public function getLogin(){
       return $this->login;
@@ -63,4 +64,9 @@
     return $this->email;
   }
 }
+//Incrementa e retorna o id correto
+  public function getIdToUser(){
+    self::$idToUser++;
+    return self::$idToUser;
+  }
 ?>

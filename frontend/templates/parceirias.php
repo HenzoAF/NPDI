@@ -34,7 +34,7 @@
       <a href="#" class="link">
         <div class="col6 left">
           <div class="col2 left">
-            <img src="img/cnpq.png" alt="" width="100%"/>
+            <img src="../img/cnpq.png" alt="" width="100%"/>
           </div>
           <div class="col4 right">
             <p>
@@ -46,7 +46,7 @@
       <a href="#" class="link">
         <div class="col6 left">
           <div class="col2 left">
-            <img src="img/capes.png" alt="" width="100%"/>
+            <img src="../img/capes.png" alt="" width="100%"/>
           </div>
           <div class="col4 right">
             <p>
@@ -58,7 +58,7 @@
       <a href="#" class="link">
         <div class="col6 left">
           <div class="col2 left">
-            <img src="img/fapemig.png" alt="" width="100%"/>
+            <img src="../img/fapemig.png" alt="" width="100%"/>
           </div>
           <div class="col4 right">
             <p>
