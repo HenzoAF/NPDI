@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NPDI</title>
+  <link rel="icon" href="img/npdi25cartazmin.png" type="image/gif">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="css/stylesheet.css"/>
+  <script src="https://use.fontawesome.com/e87f3c4a42.js"></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <!-- <script src="js/app.js" type="text/javascript"></script> -->
+</head>
+<body class="bg-pix" ng-app="NPDI" ng-controller="indexController">
+  <!--Navbar desktop-->
+  <div class="navbar-fixed nav-desk" >
+  <nav>
+    <div class="nav-wrapper bg-blue">
+      <ul class="left hide-on-med-and-down">
+        <li><a ng-click="go('/sobre')">Sobre o NPDI</a></li>
+        <li><a ng-click="go('/projetos')">Projetos</a></li>
+        <li><a ng-click="go('/disciplinas')">Disciplinas</a></li>
+        <li><a ng-click="go('/galeria')">Galeria</a></li>
+        <li><a ng-click="go('/link')">Links</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a ng-click="go('/login')">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--Nav Mobile-->
+<div class="nav-mobile">
+  <a ng-click="go('/sobre')"><center><h4 class="fill bg-blue white-font mobile-menu">Sobre o NPDI</h4></center></a>
+  <a ng-click="go('/projetos')"><center><h4 class="fill bg-blue white-font mobile-menu">Projetos</h4></center></a>
+  <a ng-click="go('/disciplinas')"><center><h4 class="fill bg-blue white-font mobile-menu">Disciplinas</h4></center></a>
+  <a ng-click="go('/galeria')"><center><h4 class="fill bg-blue white-font mobile-menu">Galeria</h4></center></a>
+  <a ng-click="go('/link')"><center><h4 class="fill bg-blue white-font mobile-menu">Links</h4></center></a>
+  <a ng-click="go('/login')"><center><h4 class="fill bg-blue white-font mobile-menu">Login</h4></center></a>
+</div>
+<!--Fim da navbar-->
+<div class="outdor clearfix">
+    <a ng-click="go('/')"><img class="left" src="img/npdi25cartaz.png" alt="Cartaz do NPDI" /></a>
+    <div class="input-field right col2 busca">
+        <input placeholder="Busca" type="text" name="busca">
+    </div>
+</div>
+
+<ng-view></ng-view>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">NPDI</h5>
+        <p class="grey-text text-lighten-4">Núcleo de Processamento Digital de Imagens.
+                                        <br>Departamento de Ciência da Computação.
+                                        <br>Instituto de Ciências Exatas.
+                                        <br>Universidade Federal de Minas Gerais.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contato</h5>
+        <ul>
+          <li class="grey-text text-lighten-3"><strong>Endereço:</strong> <a target="_blank" class="grey-text text-lighten-3" href="https://www.google.com.br/maps/place/Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Lagoinha,+Belo+Horizonte+-+MG/@-19.8670171,-43.9636391,17z/data=!3m1!4b1!4m5!3m4!1s0xa69063d33adf9d:0xc47b2d3a7dcf4bf2!8m2!3d-19.8670222!4d-43.9614504">
+                    Av. Antônio Carlos 6627 - ICEx - sl. 3055
+                <br>Pampulha - CEP 31270-010
+                <br>Belo Horizonte - Minas Gerais - Brasil.</a></li>
+          <li class="grey-text text-lighten-3"><strong>Telefone:</strong> (31) 3409-5854</li>
+          <li class="grey-text text-lighten-3"><strong>Informações:</strong> npdi@listas.dcc.ufmg.br</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2014 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/routes.js"></script>
+
+    <script src="js/controllers/login-controller.js"></script>
+
+    <!-- <script src="js/controllers/disciplinas-controller.js"></script>
+    <script src="js/controllers/galeria-controller.js"></script>
+    <script src="js/controllers/home-controller.js"></script>
+    <script src="js/controllers/links-controller.js"></script>
+    <script src="js/controllers/login-controller.js"></script>
+    <script src="js/controllers/nova-postagem-controller.js"></script>
+    <script src="js/controllers/projetos-controller.js"></script>
+    <script src="js/controllers/sobre-controller.js"></script> -->
+
+    <script src="js/controllers/index-controller.js"></script>
+
+</body>
+</html>

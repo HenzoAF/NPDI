@@ -13,9 +13,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
   <script src="../js/app.js" type="text/javascript"></script>
-  <?php include 'Administrador.php';
-        include 'AdministradorDAO.php';
-  ?>
 </head>
 <body class="bg-pix" >
   <!--Navbar desktop-->
@@ -30,7 +27,6 @@
         <li><a href="/frontend/templates/links.php">Links</a></li>
       </ul>
       <ul class="right hide-on-med-and-down" ng-app="clock" ng-controller="clockController as cc">
-        <li>{{currentTime}}</li>
         <li><a href="/frontend/templates/login.php">Login</a></li>
       </ul>
     </div>

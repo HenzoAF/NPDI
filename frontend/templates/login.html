@@ -1,0 +1,29 @@
+  <?php
+  include 'head.inc';
+  ?>
+  <div class="canvas clearfix">
+    <center>
+      <div class="login painel col3">
+        <form class="col s12" name="loginForm" ng-submit="enviar()" novalidate>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="user" type="text" class="form-control validate" name="usuario" ng-model="login.usuario" required>
+            </div>
+            <div class="input-field col s6">
+              <input id="password" type="password" class="form-control validate" name="senha" ng-model="login.senha" required>
+            </div>
+          </div>
+          <center>
+            <button class="waves-effect waves-light btn-large bg-blue" type="submit">Entrar</button><br><br>
+          </form>
+          </center>
+      </div>
+    </center>
+  </div>
+
+  <div class="">
+    <pre>
+      <pre>login = {{login | json}}</pre>
+    </pre>
+  </div>
+  <?php include 'footer.inc';?>
